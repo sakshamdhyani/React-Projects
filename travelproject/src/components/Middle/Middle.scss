@@ -27,7 +27,7 @@ root{
 
 .middle{
     width: 100%;
-
+    padding: 3rem;
     .secContainer{
 
         .grid{
@@ -61,6 +61,8 @@ root{
 @media screen and (min-width: 480px){
 
     .middle{
+        padding: 5rem;
+
         .secContainer{
             .grid{
                 grid-template-columns: repeat(2,1fr);

@@ -25,11 +25,11 @@ root {
 
 
 .portfolio{
+    padding: 3rem;
     .secContainer{
-        gap: 2rem;
-        .leftContent{
-
+        
             .grid{
+                margin-top: 1rem;
                 .singlePortfolio{
                     gap: 1rem;
                     align-items: flex-start;
@@ -48,17 +48,6 @@ root {
                     }
                 }
             }
-        }
-
-        
-        .rightContent{
-            
-            img{
-                
-                height: 300px;
-                width: 300px;
-            }
-        }
         
     }
 }
@@ -70,10 +59,11 @@ root {
 
 @media screen and (min-width: 480px){
     .portfolio{
+        padding: 5rem;
         .secContainer{
-            .leftContent{
+            grid-template-columns: repeat(1,1fr);
                 .secHeading{
-
+                    text-align: center;
                     h3{
                         font-size: var(--h2FontSize);
                     }
@@ -107,7 +97,7 @@ root {
                         }
                     }
                 }
-            }
+            
         }
     }
 }
@@ -116,9 +106,13 @@ root {
 @media screen and (min-width: 660px){
     .portfolio{
         .secContainer{
-            .leftContent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
                 .secHeading{
-
+                    text-align: center;
                     h3{
                         font-size: 2rem;
                     }
@@ -135,18 +129,37 @@ root {
                         gap: 1.5rem;
                     }
                 }
-            }
+            
+        }
+    }
+}
 
-            .rightContent{
-                margin: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img{
-                    margin: auto ;
-                    max-width: 80%;
+
+
+@media screen and (min-width: 820px){
+    .portfolio{
+        .secContainer{
+
+                .secHeading{
+                    text-align: center;
+                    h3{
+                        font-size: var(--h2FontSize);
+                    }
+
+                    p{
+                        font-size: var(--h3FontSize);
+                    }
                 }
-            }
+
+                .grid{
+                    grid-template-columns: repeat(3,1fr);
+
+                    .singlePortfolio{
+                        gap: 1.5rem;
+                    }
+                }
+            
+
         }
     }
 }

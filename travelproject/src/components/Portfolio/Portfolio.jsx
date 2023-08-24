@@ -1,25 +1,22 @@
-import React from 'react'
 import './Portfolio.scss'
 
 // import assets
 import icon1 from '../../Assets/icon1.png'
 import icon2 from '../../Assets/icon2.png'
 import icon3 from '../../Assets/icon3.png'
-import image from '../../Assets/gridImage.jpg'
 
 const Portfolio = () => {
   return (
     <div className='portfolio section container'>
 
-        <div className="secContainer grid">
+        <div className="secContainer">
 
-          <div className='leftContent'>
-              <div className="secHeading">
+        <div className="secHeading">
                   <h3>Why should you choose us </h3>
                   <p>
                     We have extensive knowledge and experience in the travel industry.
                   </p>
-              </div>
+        </div>
 
               <div className="grid">
                 <div className="singlePortfolio flex">
@@ -65,11 +62,7 @@ const Portfolio = () => {
                     </div>
                 </div>
               </div>
-          </div>
 
-          <div className="rightContent">
-            <img src={image} alt="Image" />
-          </div>
         </div>
     </div>
   )

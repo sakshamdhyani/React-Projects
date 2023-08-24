@@ -6,71 +6,67 @@ import {BsTwitter} from 'react-icons/bs'
 
 const Footer = () => {
   return (
-    <div className='footer'>
-        <div className="secContainer container grid">
-        
-          <div className="logoDiv">
+    <div className='footer-parent'>
+    
+      <div className="footer">
 
-            <div className="footerLogo">
-              <BiLogoMediumOld className='icon'/>
-              <span>OU-Trips</span>
-            </div>
+          <div className="part1">
 
-            <div className="socials flex">
-              <ImFacebook className='icon'/>
-              <BsTwitter className='icon'/>
-              <AiFillInstagram className='icon'/>
-            </div>
+              <h4>
+                <BiLogoMediumOld/>
+                <span>Ou-Trips</span>
+              </h4>
+
+              <div className='icons'>
+                <ImFacebook className='icon'/>
+                <AiFillInstagram className='icon'/>
+                <BsTwitter className='icon'/>
+              </div>
+
+          </div>
+
+          <div className="part2">
+
+            <h4>Helpful Links</h4>
+
+          
+              <li>Home</li>
+              <li>Explore</li>
+              <li>Travel</li>
+              <li>Blog</li>
+            
+
+          </div>
+
+          <div className="part3">
+
+            <h4>Information</h4>
+
+          
+              <li>Destination</li>
+              <li>Support</li>
+              <li>Travel & Condition</li>
+              <li>Privacy</li>
+            
+
           </div>
 
 
-            <div className="footerLinks">
-              <span className="linkTitle">
-                Information
-              </span>
+          <div className="part4">
 
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Explore</a>
-              </li>
-              <li>
-                <a href="#">Travel</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
+            <h4>Contact Details</h4>
 
-            </div>
+          
+              <li>+651 125 658</li>
+              <li>moutravels@someting.com</li>
+              
+            
 
-            <div className="footerLinks">
-              <span className="linkTitle">
-                Helpful Links
-              </span>
+          </div>
 
-              <li>
-                <a href="#">Destination</a>
-              </li>
-              <li>
-                <a href="#">Support</a>
-              </li>
-              <li>
-                <a href="#">Travel & Condition</a>
-              </li>
-              <li>
-                <a href="#">Privacy</a>
-              </li>
+          
 
-            </div>
-
-            <div className="footerLinks">
-              <span className='linkTitle'> Contact details </span>
-              <span className='phone'>+651 125 658</span>
-              <span className='email'>isratech8@outlook.com</span>
-            </div>
-
-        </div>
+      </div>
     </div>
   )
 }
