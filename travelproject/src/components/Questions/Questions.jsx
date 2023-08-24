@@ -1,19 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import './Questions.scss'
 import Accordion from './Accordion'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Questions = () => {
 
   const [active , setActive] = useState("How do I choose the right travel destination for me?");
 
+  useEffect(() => {
+
+    Aos.init({duration: 2000})
+
+
+  },[])
+
   return (
 
     <div className='questions section container'>
       <div className='secHeading'>
-        <h3>Frequently Asked Questions</h3>
+        <h3 data-aos = 'fade-up'>Frequently Asked Questions</h3>
       </div>
 
-      <div className="secContainer grid">
+      <div className="secContainer grid" data-aos = 'fade-up'>
 
         {/* we will import a component from a different file*/}
 
